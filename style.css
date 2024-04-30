@@ -184,12 +184,12 @@ footer {
 
 
 hr {
-    border: none; /* Remove default border */
-    height: 1px; /* Set the height of the line */
+    border: none; 
+    height: 1px; 
     width: 300px;
-    background-color: #999; /* Choose your preferred color */
-    margin: 20px auto; /* Add some spacing above and below */
-    padding: 0 20px; /* Add padding to create distance from left and right */
+    background-color: #999; 
+    margin: 20px auto; 
+    padding: 0 20px; 
 }
 
 .social-links {
@@ -204,12 +204,12 @@ hr {
 }
 
 .social-links li img {
-    width: 40px; /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
+    width: 40px; 
+    height: 40px; 
 }
 
 .social-links li img:hover {
-    opacity: 0.7; /* Change opacity on hover */
+    opacity: 0.7; 
 }
 .social-links li a {
     display: inline-block;
@@ -230,6 +230,11 @@ hr {
     margin-top: 5px;
 }
 
+nav ul li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+  }
 
 @media (max-width: 768px) {
     .footer-content {
@@ -255,9 +260,26 @@ hr {
     .card-image {
         display: none; 
     }
+     nav ul li {
+        display: block;
+
+    }
+    nav ul {
+        width: 30%;
+        flex-direction: column;
+    }
 }
 
 
 @media (min-width: 481px) and (max-width: 768px) {
+
+       nav ul li {
+        display: block;
+
+    }
+    nav ul {
+        width: 30%;
+        flex-direction: column;
+    }
     
 }
